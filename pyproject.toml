@@ -1,5 +1,82 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "aws-codeseeder"
+version = "1.0.0.dev0"
+description = "A framework utilizing AWS CodeBuild to manage remote code execution."
+authors = [
+  "AWS Professional Services <aws-proserve-opensource@amazon.com>",
+]
+license = "Apache License 2.0"
+readme = "README.md"
+
+packages = [{ include = "aws_codeseeder" }]
+package-mode = true
+
+keywords = ["aws", "cdk"]
+
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Information Technology",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Libraries :: Application Frameworks",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Typing :: Typed",
+]
+
+homepage = "https://github.com/awslabs/aws-codeseeder"
+repository = "https://github.com/awslabs/aws-codeseeder"
+documentation = "https://aws-codeseeder.readthedocs.io/"
+
+[tool.poetry.urls]
+"Org Site" = "https://aws.amazon.com/professional-services/"
+
+[tool.poetry.scripts]
+codeseeder = "aws_codeseeder.__main__:main"
+
+[tool.poetry.dependencies]
+python = ">=3.8, <3.13"
+
+boto3 = "^1.24.0"
+pyyaml = "^6.0.1"
+click = "^7.1.0"
+cfn-flip = "^1.2.3"
+certifi = "^2023.7.22"
+
+# modules
+awscli = { version = "^1.19.0", optional = true }
+wheel = { version = "^0.38.1", optional = true }
+twine = { version = "^3.3.0", optional = true }
+
+[tool.poetry.group.dev.dependencies]
+# build
+poetry = "^1.8.3"
+
+# lint
+ruff = "^0.4.4"
+mypy = "^1.10.0"
+tox = "^4.15.0"
+
+# test
+pytest = "^7.2.0"
+pytest-cov = "^4.0.0"
+pytest-mock = "^3.10.0"
+moto = {version = "^4.0.13", extras = ["all"]}
+
+# types
+types-pyyaml = "^6.0.12.20240311"
+types-setuptools = "^70.0.0.20240523"
+
 [tool.ruff]
-extend-include = ["*.ipynb"]
 exclude = [
     ".eggs",
     ".git",
