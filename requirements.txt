@@ -4,13 +4,13 @@
 #
 #    pip-compile
 #
-boto3==1.34.117
+boto3==1.34.146
     # via aws-codeseeder (setup.py)
-botocore==1.34.117
+botocore==1.34.146
     # via
     #   boto3
     #   s3transfer
-certifi==2024.6.2
+certifi==2024.7.4
     # via aws-codeseeder (setup.py)
 cfn-flip==1.3.0
     # via aws-codeseeder (setup.py)
@@ -30,7 +30,7 @@ pyyaml==6.0.1
     # via
     #   aws-codeseeder (setup.py)
     #   cfn-flip
-s3transfer==0.10.1
+s3transfer==0.10.2
     # via boto3
 six==1.16.0
     # via
