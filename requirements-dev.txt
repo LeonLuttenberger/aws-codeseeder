@@ -24,7 +24,7 @@ aws-sam-translator==1.89.0
     # via cfn-lint
 aws-xray-sdk==2.13.1
     # via moto
-awscli==1.32.117
+awscli==1.33.32
     # via -r requirements-dev.in
 babel==2.12.1
     # via sphinx
@@ -34,7 +34,7 @@ boto3==1.34.109
     # via
     #   aws-sam-translator
     #   moto
-botocore==1.34.117
+botocore==1.34.150
     # via
     #   aws-xray-sdk
     #   awscli
@@ -93,7 +93,7 @@ docutils==0.16
     #   sphinx-rtd-theme
 exceptiongroup==1.2.1
     # via pytest
-filelock==3.14.0
+filelock==3.15.4
     # via
     #   tox
     #   virtualenv
@@ -176,19 +176,19 @@ mdurl==0.1.2
     # via markdown-it-py
 more-itertools==9.1.0
     # via jaraco-classes
-moto[all]==5.0.9
+moto[all]==5.0.11
     # via -r requirements-dev.in
 mpmath==1.3.0
     # via sympy
 multipart==0.2.4
     # via moto
-mypy==1.10.0
+mypy==1.11.0
     # via -r requirements-dev.in
 mypy-extensions==1.0.0
     # via mypy
 myst-parser==1.0.0
     # via -r requirements-dev.in
-networkx==3.1
+networkx==3.2.1
     # via
     #   -r requirements-dev.in
     #   cfn-lint
@@ -196,7 +196,7 @@ openapi-schema-validator==0.6.2
     # via openapi-spec-validator
 openapi-spec-validator==0.7.1
     # via moto
-packaging==24.0
+packaging==24.1
     # via
     #   build
     #   docker
@@ -243,7 +243,7 @@ pygments==2.15.1
     #   sphinx
 pyparsing==3.1.2
     # via moto
-pyproject-api==1.6.1
+pyproject-api==1.7.1
     # via tox
 pyproject-hooks==1.0.0
     # via
@@ -251,7 +251,7 @@ pyproject-hooks==1.0.0
     #   pip-tools
 pyroma==4.2
     # via -r requirements-dev.in
-pytest==8.2.1
+pytest==8.3.2
     # via
     #   -r requirements-dev.in
     #   pytest-cov
@@ -308,7 +308,7 @@ rpds-py==0.18.1
     #   referencing
 rsa==4.7.2
     # via awscli
-ruff==0.4.7
+ruff==0.5.5
     # via -r requirements-dev.in
 s3transfer==0.10.1
     # via
@@ -364,15 +364,15 @@ tomli==2.0.1
     #   pyproject-hooks
     #   pytest
     #   tox
-tox==4.15.0
+tox==4.16.0
     # via -r requirements-dev.in
 trove-classifiers==2024.5.22
     # via pyroma
-twine==5.1.0
+twine==5.1.1
     # via -r requirements-dev.in
-types-pyyaml==6.0.12.20240311
+types-pyyaml==6.0.12.20240724
     # via -r requirements-dev.in
-types-setuptools==70.0.0.20240524
+types-setuptools==71.1.0.20240726
     # via -r requirements-dev.in
 typing-extensions==4.7.1
     # via
@@ -389,7 +389,7 @@ urllib3==1.26.18
     #   requests
     #   responses
     #   twine
-virtualenv==20.26.2
+virtualenv==20.26.3
     # via tox
 webencodings==0.5.1
     # via bleach
