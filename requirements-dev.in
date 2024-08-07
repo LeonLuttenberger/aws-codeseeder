@@ -1,4 +1,4 @@
-awscli~=1.33.31
+awscli~=1.33.37
 certifi~=2024.7.4
 check-manifest~=0.47
 mypy~=1.11.1
@@ -17,6 +17,6 @@ changelog-cli~=0.7.0
 twine~=5.1.1
 sphinx~=5.3.0
 moto[all]>=4.0.13
-networkx~=3.1.0
+networkx~=3.3
 urllib3>=1.26.18
 tox>=4.0.0
